@@ -1,9 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class KreisausschnittTest {
+public class KreisausschnitteTest {
     public static void main(String[] args) {
-        Kreisausschnitt gui = new Kreisausschnitt();
+        Kreisausschnitte gui = new Kreisausschnitte();
         gui.setTitle("Kreisausschnitt");
         gui.setPreferredSize(new Dimension(800,800));
         gui.setBackground(Color.white);
