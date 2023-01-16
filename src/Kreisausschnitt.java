@@ -7,38 +7,33 @@ import java.util.Hashtable;
 public class Kreisausschnitt extends JFrame implements ActionListener {
 
     // JSlider
-    private JSlider slider = new JSlider(JSlider.VERTICAL, 1,10,3);
+    private final JSlider slider = new JSlider(JSlider.VERTICAL, 1,10,3);
 
     // JButton - Start Button
-    private JButton start = new JButton("Start");
-
-    // JPanel rechte Seite
-    private JPanel right = new JPanel();
+    private final JButton start = new JButton("Start");
 
     // JPanel linke Seite
-    private Leinwand leinwand = new Leinwand();
-
-    // JLabels für die Anzeige der Kreisgröße
-    private JLabel size1 = new JLabel("1x1");
-    private JLabel size5 = new JLabel("5x5");
-    private JLabel size10 = new JLabel("10x10");
-
-    // Hashtable für die Inhalte der Sliderbeschriftung
-    private Hashtable table = new Hashtable();
+    private final Leinwand leinwand = new Leinwand();
 
     // Konstruktor
     Kreisausschnitt() {
 
         // setzt das Layout der rechten Seite
+        // JPanel rechte Seite
+        JPanel right = new JPanel();
         right.setLayout(new BorderLayout());
 
         // setzt Größe und Hintergrundfarbe der Leinwand
         leinwand.setPreferredSize(new Dimension(800,800));
         leinwand.setBackground(Color.WHITE);
 
-        // fügt Werte zur Sliderbeschriftung (Hashtable) hinzu
+        // Hashtable für die Inhalte der Sliderbeschriftung
+        Hashtable table = new Hashtable();
+        JLabel size1 = new JLabel("1x1");
         table.put(1, size1);
+        JLabel size5 = new JLabel("5x5");
         table.put(5, size5);
+        JLabel size10 = new JLabel("10x10");
         table.put(10, size10);
 
         // Konfiguration des Sliders
