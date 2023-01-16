@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Hashtable;
 
-public class Kreisausschnitte extends JFrame implements ActionListener {
+public class Kreisausschnitt extends JFrame implements ActionListener {
 
     // JSlider
     private final JSlider slider = new JSlider(JSlider.VERTICAL, 1,10,3);
@@ -16,7 +16,7 @@ public class Kreisausschnitte extends JFrame implements ActionListener {
     private final Leinwand leinwand = new Leinwand();
 
     // Konstruktor
-    Kreisausschnitte() {
+    Kreisausschnitt() {
 
         // setzt das Layout der rechten Seite
         // JPanel rechte Seite
