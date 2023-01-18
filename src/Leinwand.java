@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.Random;
 
 public class Leinwand extends JPanel {
 
@@ -28,9 +27,9 @@ public class Leinwand extends JPanel {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     // setzt eine zufällige Farbe
-                    int colorR = (int) (Math.random()*255);
-                    int colorG = (int) (Math.random()*255);
-                    int colorB = (int) (Math.random()*255);
+                    int colorR = (int) (Math.random()*256);
+                    int colorG = (int) (Math.random()*256);
+                    int colorB = (int) (Math.random()*256);
                     g.setColor(new Color(colorR, colorG, colorB));
 
                     if (i == n && j == n) {
